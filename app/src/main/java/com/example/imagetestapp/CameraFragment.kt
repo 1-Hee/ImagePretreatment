@@ -25,18 +25,6 @@ import java.util.concurrent.Semaphore
 import java.util.concurrent.TimeUnit
 import kotlin.math.max
 import kotlin.math.sign
-
-
-/*
-
-카메라를 구동한 뒤에는 미리보기 세션을 만들어서
-카메라 프레임을 기기화면에 보여주는 작업을 진행했다.
-
-이 과정에서 카메라 초점이나 노출을 정하는 작업을 할 수 있으니,
-이부분 수정하면서 진행해보는 것도 괜찮을 것 같다.
-
- */
-
 class CameraFragment(
     private val connectionCallback: ConnectionCallback,
     private val imageAvailableListener: ImageReader.OnImageAvailableListener,
